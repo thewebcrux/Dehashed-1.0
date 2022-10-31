@@ -1,0 +1,111 @@
+/* some global styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;600;500;700&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-black: #180403;
+  --accent-red: #bf4e40;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-black);
+  cursor: pointer;
+}
+
+body {
+  background: #dfdad7;
+  font-family: 'Red Hat Display', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.x-1,
+.x-2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  position: absolute;
+}
+
+.x-1 {
+  left: 80px;
+  top: 40px;
+}
+
+.x-2 {
+  top: 40px;
+  right: 80px;
+}
+
+header {
+  margin: 0 auto;
+  margin-top: 270px;
+  text-align: center;
+  position: relative;
+}
+
+header .title {
+  position: relative;
+  right: 50px;
+}
+
+/* Nav bar styles */
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 32px;
+}
+
+nav ul li a {
+  color: var(--main-black);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  border-bottom: 3px solid var(--main-black);
+}
+
+nav ul li a:active {
+  color: var(--accent-red);
+  border-bottom: 3px solid var(--accent-red);
+}
+.active {
+  color: var(--accent-red);
+}
+
+.active:hover {
+  border-bottom: 3px solid var(--accent-red);
+}
+
+.arrows {
+  margin: 0 auto;
+  margin-top: 232px;
+  display: flex;
+  flex-direction: column;
+  width: 24px;
+  height: 24px;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.arrows .below-arrow {
+  margin-top: -17px;
+}
+
+.hidden {
+  display: none;
+}
