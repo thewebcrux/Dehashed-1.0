@@ -1,0 +1,37 @@
+*{
+    background-color: #DFDAD7;
+}
+.firstx{
+    position: absolute;
+width: 21px;
+height: 53px;
+left: 80px;
+top: 40px;
+
+font-family: 'Red Hat Display';
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+line-height: 53px;
+/* identical to box height */
+
+
+color: #000000;
+}
+.secondx{
+    position: absolute;
+width: 21px;
+height: 53px;
+left: 1337px;
+top: 40px;
+
+font-family: 'Red Hat Display';
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+line-height: 53px;
+/* identical to box height */
+
+
+color: #000000;
+}
