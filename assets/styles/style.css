@@ -1,37 +1,35 @@
-*{
-    background-color: #DFDAD7;
+* {
+  background-color: #dfdad7;
 }
-.firstx{
-    position: absolute;
-width: 21px;
-height: 53px;
-left: 80px;
-top: 40px;
+.firstx {
+  position: absolute;
+  width: 21px;
+  height: 53px;
+  left: 80px;
+  top: 40px;
 
-font-family: 'Red Hat Display';
-font-style: normal;
-font-weight: 600;
-font-size: 40px;
-line-height: 53px;
-/* identical to box height */
+  /* font-family: 'Red Hat Display'; */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 53px;
+  /* identical to box height */
 
-
-color: #000000;
+  color: #000000;
 }
-.secondx{
-    position: absolute;
-width: 21px;
-height: 53px;
-left: 1337px;
-top: 40px;
+.secondx {
+  position: absolute;
+  width: 21px;
+  height: 53px;
+  left: 1337px;
+  top: 40px;
 
-font-family: 'Red Hat Display';
-font-style: normal;
-font-weight: 600;
-font-size: 40px;
-line-height: 53px;
-/* identical to box height */
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 53px;
+  /* identical to box height */
 
-
-color: #000000;
+  color: #000000;
 }
