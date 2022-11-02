@@ -6,7 +6,7 @@ Commit from dev branch
 
 The folder structure goes like this :
 
-
+<pre>
 please use understandable names for files.
 name that makes sense and makes it easy for others to identify
 /dehashed-Website-repo-
@@ -28,3 +28,4 @@ name that makes sense and makes it easy for others to identify
         /pages
           page_name.html
           page_name1.html
+</pre>
