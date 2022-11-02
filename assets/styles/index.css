@@ -9,16 +9,18 @@ main .about-box {
   justify-content: space-between;
 }
 
-main .about-box > h1 {
+main .about-box h1 {
   font-weight: 700;
   font-size: 40px;
+  margin-bottom: 10px;
 }
 
-main .about-box > p {
+main .about-box p {
   font-weight: 500;
   font-size: 20px;
   line-height: 26px;
   color: #333333;
+  margin-bottom: 20px;
 }
 
 button {
@@ -48,7 +50,6 @@ main {
   gap: 40px;
 }
 main #dehashed {
-  height: 343px;
   margin-top: 80px;
   grid-area: dehashed;
 }
@@ -57,25 +58,17 @@ main #dehashed .brown-button {
   margin-left: 30px;
 }
 
-main #filecoin,
-main #cyber {
-  height: 317px;
-}
-
 #filcoin button,
 #cyber button {
   padding: 12px 18px;
   width: 113px;
   display: flex;
   align-items: center;
-  /* margin-left: 100%; */
 }
 #filecoin .actions,
 #cyber .actions {
   display: flex;
   justify-content: end;
-  /* align-items: flex-end;
-  justify-items: flex-end; */
 }
 
 main #filecoin {
@@ -85,82 +78,49 @@ main #filecoin {
 main #cyber {
   grid-area: cyber;
 }
-/* main #filecoin,
-main #cyber {
-   border: 1px solid red;
-  width: 40%;
-  display: inline-flex;
-  height: 317px;
-  margin: 0 auto; 
-} */
 
-/* .interaction {
-  margin-top: 80px;
-  scroll-margin-top: 110px;
+@media (max-width: 650px) {
+  main {
+    grid-template-areas:
+      'dehashed'
+      'filecoin'
+      'cyber';
+  }
+
+  #filecoin .actions,
+  #cyber .actions {
+    justify-content: center;
+  }
+
+  #dehashed .actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  main #dehashed .brown-button {
+    margin-left: 0;
+  }
+
+  .bro main .about-box p {
+    margin-bottom: 20px;
+  }
 }
 
-.interaction img {
-  display: block;
-  margin: 0 auto;
+@media (max-width: 650px) {
+  main {
+    width: 95%;
+  }
+
+  main .about-box {
+    padding: 20px;
+  }
+
+  main .about-box h1 {
+    font-size: 30px;
+  }
+  main .about-box p {
+    font-size: 20px;
+  }
 }
-
-.interaction p,
-main p {
-  text-align: center;
-  margin-top: 8px;
-  font-weight: 500;
-  font-size: 24px;
-  color: #333333;
-}
-
-main > p {
-  margin: 0 auto;
-  width: fit-content;
-  margin-top: 40px;
-  padding-bottom: 10px;
-  line-height: 10px;
-  border-bottom: 2px solid black;
-}
-
-.interaction p {
-  margin-bottom: 160px;
-}
-
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-pagination {
-  margin-bottom: 30px;
-}
-
-.swiper-pagination-bullet {
-  background: white;
-  border: 2px solid black;
-  height: 9.5px;
-  width: 9.5px;
-}
-
-.swiper-pagination-bullet-active {
-  background: black;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  margin-bottom: 100px;
-
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-} */
