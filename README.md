@@ -13,7 +13,6 @@ name that makes sense and makes it easy for others to identify
         /index.html(landing page/home page/main page/starting page)
         /assets
             /styles
-                /fonts/
                 /style.css(the standard css file applicable to all pages)
                 /bootstrap/(bootstrap bundle)
                 /pages/(custom css files that are specific to certain pages)
@@ -25,6 +24,7 @@ name that makes sense and makes it easy for others to identify
             /img/
                 img1.png
                 img2.png
+            /fonts/    
         /pages
           page_name.html
           page_name1.html
