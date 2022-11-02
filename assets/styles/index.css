@@ -1,0 +1,166 @@
+main .about-box {
+  background: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 31px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main .about-box > h1 {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+main .about-box > p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #333333;
+}
+
+button {
+  border: 1px solid #000000;
+  border-radius: 40px;
+  padding: 16px 24px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.white-button {
+  color: #333333;
+}
+
+.brown-button {
+  color: #ffffff;
+  background: #bf4e40;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    'dehashed dehashed'
+    'filecoin cyber';
+  gap: 40px;
+}
+main #dehashed {
+  height: 343px;
+  margin-top: 80px;
+  grid-area: dehashed;
+}
+
+main #dehashed .brown-button {
+  margin-left: 30px;
+}
+
+main #filecoin,
+main #cyber {
+  height: 317px;
+}
+
+#filcoin button,
+#cyber button {
+  padding: 12px 18px;
+  width: 113px;
+  display: flex;
+  align-items: center;
+  /* margin-left: 100%; */
+}
+#filecoin .actions,
+#cyber .actions {
+  display: flex;
+  justify-content: end;
+  /* align-items: flex-end;
+  justify-items: flex-end; */
+}
+
+main #filecoin {
+  grid-area: filecoin;
+}
+
+main #cyber {
+  grid-area: cyber;
+}
+/* main #filecoin,
+main #cyber {
+   border: 1px solid red;
+  width: 40%;
+  display: inline-flex;
+  height: 317px;
+  margin: 0 auto; 
+} */
+
+/* .interaction {
+  margin-top: 80px;
+  scroll-margin-top: 110px;
+}
+
+.interaction img {
+  display: block;
+  margin: 0 auto;
+}
+
+.interaction p,
+main p {
+  text-align: center;
+  margin-top: 8px;
+  font-weight: 500;
+  font-size: 24px;
+  color: #333333;
+}
+
+main > p {
+  margin: 0 auto;
+  width: fit-content;
+  margin-top: 40px;
+  padding-bottom: 10px;
+  line-height: 10px;
+  border-bottom: 2px solid black;
+}
+
+.interaction p {
+  margin-bottom: 160px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-pagination {
+  margin-bottom: 30px;
+}
+
+.swiper-pagination-bullet {
+  background: white;
+  border: 2px solid black;
+  height: 9.5px;
+  width: 9.5px;
+}
+
+.swiper-pagination-bullet-active {
+  background: black;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 100px;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+} */

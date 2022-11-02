@@ -1,0 +1,88 @@
+.interaction {
+  margin-top: 80px;
+  scroll-margin-top: 110px;
+}
+
+.interaction img {
+  display: block;
+  margin: 0 auto;
+}
+
+.interaction p,
+main p {
+  text-align: center;
+  margin-top: 8px;
+  font-weight: 500;
+  font-size: 24px;
+  color: #333333;
+}
+
+main > p {
+  margin: 0 auto;
+  width: fit-content;
+  margin-top: 40px;
+  padding-bottom: 10px;
+  line-height: 10px;
+  border-bottom: 2px solid black;
+}
+
+.interaction p {
+  margin-bottom: 160px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-pagination {
+  margin-bottom: 30px;
+}
+
+.swiper-pagination-bullet {
+  background: white;
+  border: 2px solid black;
+  height: 9.5px;
+  width: 9.5px;
+}
+
+.swiper-pagination-bullet-active {
+  background: black;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 100px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+footer {
+  font-weight: 500;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  color: #333333;
+  width: 90%;
+  border-top: 2px solid black;
+  margin: 0 auto;
+  padding: 45px 0;
+  margin-top: 64px;
+}
+
+footer .social span {
+  color: var(--accent-red);
+}
