@@ -1,6 +1,3 @@
-/* some global styles */
-/* can be reused */
-
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;600;500;700&display=swap');
 
 *,
@@ -64,7 +61,7 @@ nav ul li a {
   color: var(--main-black);
   font-size: 20px;
   font-weight: 600;
-  border-bottom: 3px solid #dfdad7; /* <- here */
+  border-bottom: 3px solid #dfdad7;
   transition: border-bottom 0.5s;
 }
 
@@ -121,6 +118,116 @@ footer .social span {
   color: var(--accent-red);
 }
 
+main .about-box {
+  background: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 31px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main .about-box h1 {
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+main .about-box p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+button {
+  border: 1px solid #000000;
+  border-radius: 40px;
+  padding: 16px 24px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.white-button {
+  color: #333333;
+}
+
+.brown-button {
+  color: #ffffff;
+  background: #bf4e40;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    'dehashed dehashed'
+    'filecoin cyber';
+  gap: 40px;
+}
+main #dehashed {
+  margin-top: 80px;
+  grid-area: dehashed;
+}
+
+main #dehashed .brown-button {
+  margin-left: 30px;
+}
+
+#filcoin button,
+#cyber button {
+  padding: 12px 18px;
+  width: 113px;
+  display: flex;
+  align-items: center;
+}
+#filecoin .actions,
+#cyber .actions {
+  display: flex;
+  justify-content: end;
+}
+
+main #filecoin {
+  grid-area: filecoin;
+}
+
+main #cyber {
+  grid-area: cyber;
+}
+
+@media (max-width: 650px) {
+  main {
+    grid-template-areas:
+      'dehashed'
+      'filecoin'
+      'cyber';
+  }
+
+  #filecoin .actions,
+  #cyber .actions {
+    justify-content: center;
+  }
+
+  #dehashed .actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  main #dehashed .brown-button {
+    margin-left: 0;
+  }
+
+  .bro main .about-box p {
+    margin-bottom: 20px;
+  }
+}
+
 @media (max-width: 650px) {
   footer {
     flex-direction: column;
@@ -156,5 +263,22 @@ footer .social span {
 
   .x {
     margin: 40px;
+  }
+}
+
+@media (max-width: 650px) {
+  main {
+    width: 95%;
+  }
+
+  main .about-box {
+    padding: 20px;
+  }
+
+  main .about-box h1 {
+    font-size: 30px;
+  }
+  main .about-box p {
+    font-size: 20px;
   }
 }
