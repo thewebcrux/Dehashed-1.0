@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;600;500;700&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-black: #180403;
+  --accent-red: #bf4e40;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-black);
+  cursor: pointer;
+}
+
+body {
+  background: #dfdad7;
+  font-family: 'Red Hat Display', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.x {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  display: flex;
+  margin: 40px 80px;
+  justify-content: space-between;
+}
+
+header {
+  margin: 0 auto;
+  margin-top: 270px;
+  text-align: center;
+  position: relative;
+}
+
+/* Nav bar styles */
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 32px;
+}
+
+nav ul li a {
+  color: var(--main-black);
+  font-size: 20px;
+  font-weight: 600;
+  border-bottom: 3px solid #dfdad7;
+  transition: border-bottom 0.5s;
+}
+
+nav ul li a:hover {
+  border-color: var(--main-black);
+}
+
+nav ul li a:active {
+  color: var(--accent-red);
+  border-color: var(--accent-red);
+}
+.active {
+  color: var(--accent-red);
+}
+
+.active:hover {
+  border-color: var(--accent-red);
+}
+
+.arrows {
+  margin: 0 auto;
+  margin-top: 232px;
+  display: flex;
+  flex-direction: column;
+  width: 24px;
+  height: 24px;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.arrows .below-arrow {
+  margin-top: -17px;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  font-weight: 500;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  color: #333333;
+  width: 90%;
+  border-top: 2px solid black;
+  margin: 0 auto;
+  padding: 45px 0;
+  margin-top: 64px;
+}
+
+footer .social span {
+  color: var(--accent-red);
+}
+
+main .about-box {
+  background: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 31px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main .about-box h1 {
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+main .about-box p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+button {
+  border: 1px solid #000000;
+  border-radius: 40px;
+  padding: 16px 24px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.white-button {
+  color: #333333;
+}
+
+.brown-button {
+  color: #ffffff;
+  background: #bf4e40;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    'dehashed dehashed'
+    'filecoin cyber';
+  gap: 40px;
+}
+main #dehashed {
+  margin-top: 80px;
+  grid-area: dehashed;
+}
+
+main #dehashed .brown-button {
+  margin-left: 30px;
+}
+
+#filcoin button,
+#cyber button {
+  padding: 12px 18px;
+  width: 113px;
+  display: flex;
+  align-items: center;
+}
+#filecoin .actions,
+#cyber .actions {
+  display: flex;
+  justify-content: end;
+}
+
+main #filecoin {
+  grid-area: filecoin;
+}
+
+main #cyber {
+  grid-area: cyber;
+}
+
+@media (max-width: 650px) {
+  main {
+    grid-template-areas:
+      'dehashed'
+      'filecoin'
+      'cyber';
+  }
+
+  #filecoin .actions,
+  #cyber .actions {
+    justify-content: center;
+  }
+
+  #dehashed .actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  main #dehashed .brown-button {
+    margin-left: 0;
+  }
+
+  .bro main .about-box p {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .about {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 650px) {
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    margin-bottom: 8px;
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 650px) {
+  .title {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 300px) {
+  .title {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+
+  .x {
+    margin: 40px;
+  }
+}
+
+@media (max-width: 650px) {
+  main {
+    width: 95%;
+  }
+
+  main .about-box {
+    padding: 20px;
+  }
+
+  main .about-box h1 {
+    font-size: 30px;
+  }
+  main .about-box p {
+    font-size: 20px;
+  }
+}
